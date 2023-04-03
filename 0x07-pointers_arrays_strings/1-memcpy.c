@@ -15,13 +15,10 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	if (size > 0)
 	{
-		int i = 0;
+		int i;
 
-		while(i < size)
-		{
+		for (i = 0; i < size; i++)
 			dest[i] = src[i];
-			i++;
-		}
 	}
 
 	return (dest);
